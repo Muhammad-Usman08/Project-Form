@@ -1,15 +1,15 @@
 
+const name = document.getElementById("name");
+const fatherName = document.getElementById("fatherName");
+const formName = document.getElementById("formName");
+const button = document.getElementById('generate');
+const formFatherName = document.getElementById('formFatherName');
 
-let getValue = ()=>{
-    const name  = document.getElementById("name");
-    const fatherName  = document.getElementById("fatherName");
-    const image  = document.getElementById("image");
-    const formName = document.getElementById("formName");
-    console.log(name.value);
-    console.log(fatherName.value);
-    console.log(image.value)
-    
+
+
+function generate() {
     formName.innerHTML = name.value
-
-    
+    formFatherName.innerHTML = fatherName.value
 }
+
+

@@ -10,19 +10,24 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body onload="getValue()">
-
+<body>
+    <!-- Information -->
     <div class="container mt-5">
         <span class="">Name</span>
         <input id="name" class="mb-5" type="text"><br>
         <span>Father Name</span>
         <input id="fatherName" type="text"><br>
-        <input id="image" type="file"><br>
-        <button onclick="getValue()" class="mt-4">generate</button>
-        
+        <button onclick="generate()" class="mt-4">generate</button>
     </div>
 
-
+ <!-- Form  -->
+ <h2 class="mt-5">Form</h2>
+    <div class="container mt-5">
+        <div class="border" id="formMain">
+            <span>name</span><p id="formName"></p><br>
+            <span>fatherName</span> <p id="formFatherName"></p>
+        </div>
+    </div>
 
      <!-- ====Custom JS Link==== -->
      <script src="app.js"></script>
