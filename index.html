@@ -4,33 +4,114 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Information demo</title>
+    <title>Form App </title>
+    <!-- ====Custom Css Link=== -->
+    <link rel="stylesheet" href="style.css">
     <!-- ====Bootstrap Css Link=== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ====Google Font Link=== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+
 </head>
 
 <body>
+
     <!-- Information -->
-    <div class="container mt-5">
-        <span class="">Name</span>
-        <input id="name" class="mb-5" type="text"><br>
-        <span>Father Name</span>
-        <input id="fatherName" type="text"><br>
+    <div class="container mt-5 information" id="information">
+        <div class="form">
+            <span class="form-span">Name</span>
+            <input id="name" placeholder="Enter Name" class="form-input" type="text">
+
+            <span class="form-span">Father Name</span>
+            <input id="fatherName" placeholder="Enter Father Name" class="form-input" type="text">
+
+            <span class="form-span">Date of Birth</span>
+            <input class="form-input" type="date">
+        </div>
+
+        <div class="form-section2">
+            <span class="form-span">Email</span>
+            <input class="form-input" placeholder="Enter email"  type="text">
+
+            <span class="form-span">Education</span>
+            <select class="form-input" >
+                <option value="">Select Option</option>
+                <option value="">Under Matric</option>
+                <option value="">Matric</option>
+                <option value="">Intermediate</option>
+                <option value="">Graduate</option>
+                <option value="">Masters</option>
+                <option value="">PHD</option>
+            </select>
+
+            <span class="form-span">CNIC</span>
+            <input class="form-input" placeholder="XXXXX-XXXXXXX-X"  type="number">
+        </div>
+
+        <div class="form-section2   ">
+            <span class="form-span">Contact Number</span>
+            <input class="form-input" placeholder="Enter contact number" type="number">
+
+            <span class="form-span">Address</span>
+            <input class="form-input" placeholder="Enter address" type="text">
+
+            <span class="form-span">Field</span>
+            <select class="form-input">
+                <option value="">Select Option</option>
+                <option value="">Computer Science</option>
+                <option value="">Medical</option>
+                <option value="">Pre Engineering</option>
+                <option value="">Commerce</option>
+                <option value="">Arts</option>
+            </select>
+        </div>
+
+        <div>
+            <span class="form-span">Country</span>
+            <select class="country-input">
+                <option value="">Pakistan</option>
+                <option value="">U.S.A</option>
+                <option value="">China</option>
+                <option value="">India</option>
+                <option value="">Afghanistan</option>
+            </select>
+        </div>
+
+        <!-- generate button -->
         <button onclick="generate()" class="mt-4">generate</button>
     </div>
 
- <!-- Form  -->
- <h2 class="mt-5">Form</h2>
-    <div class="container mt-5">
-        <div class="border" id="formMain">
-            <span>name</span><p id="formName"></p><br>
-            <span>fatherName</span> <p id="formFatherName"></p>
-        </div>
-    </div>
 
-     <!-- ====Custom JS Link==== -->
-     <script src="app.js"></script>
+
+
+
+
+
+
+    <!-- Form  -->
+    <section id="formMain">
+        <h2 class="mt-5">Form</h2>
+        <div class="container mt-5">
+            <div class="border">
+                <span>name</span>
+                <p id="formName"></p><br>
+                <span>fatherName</span>
+                <p id="formFatherName"></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ====Custom JS Link==== -->
+    <script src="app.js"></script>
     <!-- =====Bootstrap JS Link==== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
