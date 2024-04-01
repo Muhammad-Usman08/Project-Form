@@ -37,6 +37,9 @@
 
     <!-- Information -->
     <div class="container mt-5 information" id="information">
+        <div>
+            <p class="table-brand" style="margin-bottom: 70px;">Information</p>
+        </div>
         <div class="form">
             <span class="form-span">Name</span>
             <input id="name" placeholder="Enter Name" class="form-input" type="text">
@@ -45,54 +48,54 @@
             <input id="fatherName" placeholder="Enter Father Name" class="form-input" type="text">
 
             <span class="form-span">Date of Birth</span>
-            <input class="form-input" type="date">
+            <input id="date" class="form-input" type="date">
         </div>
 
         <div class="form-section2">
             <span class="form-span">Email</span>
-            <input class="form-input" placeholder="Enter email" type="text">
+            <input id="email" class="form-input" placeholder="Enter email" type="text">
 
             <span class="form-span">Education</span>
             <select class="form-input">
-                <option value="">Select Option</option>
-                <option value="">Under Matric</option>
-                <option value="">Matric</option>
-                <option value="">Intermediate</option>
-                <option value="">Graduate</option>
-                <option value="">Masters</option>
-                <option value="">PHD</option>
+                <option value="Not Selected">Select Option</option>
+                <option value="Under Matric">Under Matric</option>
+                <option value="Matric">Matric</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Graduate">Graduate</option>
+                <option value="Masters">Masters</option>
+                <option value="PHD">PHD</option>
             </select>
 
             <span class="form-span">CNIC</span>
-            <input class="form-input" placeholder="XXXXX-XXXXXXX-X" type="number">
+            <input id="CNIC" class="form-input" placeholder="XXXXX-XXXXXXX-X" type="number">
         </div>
 
         <div class="form-section2   ">
             <span class="form-span">Contact Number</span>
-            <input class="form-input" placeholder="Enter contact number" type="number">
+            <input id="contact" class="form-input" placeholder="Enter contact number" type="number">
 
             <span class="form-span">Address</span>
-            <input class="form-input" placeholder="Enter address" type="text">
+            <input id="address" class="form-input" placeholder="Enter address" type="text">
 
             <span class="form-span">Field</span>
             <select class="form-input">
-                <option value="">Select Option</option>
-                <option value="">Computer Science</option>
-                <option value="">Medical</option>
-                <option value="">Pre Engineering</option>
-                <option value="">Commerce</option>
-                <option value="">Arts</option>
+                <option value="Not Selected">Select Option</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Medical">Medical</option>
+                <option value="Pre Engineering">Pre Engineering</option>
+                <option value="Commerce">Commerce</option>
+                <option value="Arts">Arts</option>
             </select>
         </div>
 
         <div>
             <span class="form-span">Country</span>
             <select class="country-input">
-                <option value="">Pakistan</option>
-                <option value="">U.S.A</option>
-                <option value="">China</option>
-                <option value="">India</option>
-                <option value="">Afghanistan</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="U.S.A">U.S.A</option>
+                <option value="China">China</option>
+                <option value="India">India</option>
+                <option value="Afghanistan">Afghanistan</option>
             </select>
         </div>
 
@@ -103,24 +106,23 @@
 
 
 
-
-
-
-
     <!-- Form  -->
     <section id="formMain">
-        <h2 class="">Form</h2>
         <div class="container mt-5">
             <table class=" form-table">
+                <p class="table-brand">Bio Data Form</p>
                 <tr class="table-row">
                     <td class="table-data">Name</td>
-                    <td id="formName" class="table-data">Muhammad Usman</td>
+                    <td id="formName" class="table-data"></td>
                 </tr>
                 <tr class="table-row">
                     <td class="table-data">Father Name</td>
-                    <td class="table-data">sadsad</td>
+                    <td class="table-data" id="formFather"></td>
                 </tr>
             </table>
+            <div>
+                <a href="" class="form-back" id="button">Back to Form </a>
+            </div>
         </div>
     </section>
 
