@@ -4,6 +4,74 @@
     box-sizing: border-box;
 }
 
+
+/* ====Login Page Styling==== */
+.login-heading {
+    text-align: center;
+    margin-top: 70px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color: #a5f019;
+}
+
+.login-info {
+    margin-top: 50px;
+    position: absolute;
+    left: 47%;
+    transform: translateX(-50%);
+}
+
+@media(max-width:600px) {
+    .login-info {
+        left: 40%;
+    }
+}
+
+@media(max-width:380px) {
+    .login-info {
+        left: 40%;
+        transform: translateX(-65%);
+
+    }
+}
+
+.login-info span {
+    font-family: "Sarabun", sans-serif;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #8e8e8e;
+}
+
+.login-info input {
+    width: 170%;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 20px;
+    font-family: "Sarabun", sans-serif;
+    background-color: #111111;
+    color: #fff;
+
+}
+
+.login-button{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #a5f019;
+    padding: 10px 35px 10px 35px;
+    font-weight: 600;
+    position: absolute;
+    left: 90%;
+    transform: translateX(-50%);
+}
+
+.login-button:hover{
+    background-color: #71ff03;
+    color: #8e8e8e;
+}
+
+
+
 /* ====Navbar Styling==== */
 .mynavbar {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12), inset 0 -1px 0 0 #dadce0;
@@ -19,6 +87,8 @@
 .navbar-link {
     text-decoration: none;
     color: #fff;
+    padding: 5px 15px 5px 15px;
+    border: 2px solid #0de42ac5;
 }
 
 @media(max-width:767px) {
@@ -29,6 +99,55 @@
 
 
 /* ====Information Styling=== */
+.information-main {
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.mycontainer {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .mycontainer {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mycontainer {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .mycontainer {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cmyontainer {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width:575px) {
+    .information-main {
+        margin-bottom: 30px;
+        padding-left: 5px;
+        margin-left: 10px;
+        padding-right: 0;
+    }
+}
+
+
 .form {
     display: flex;
     justify-content: space-around;
@@ -70,6 +189,9 @@
     background-color: black;
     border: none;
     border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .country-input {
@@ -101,7 +223,15 @@
 
     .button {
         margin-top: 0px;
-        margin-bottom: 50px;
+        left: 40%;
+        transform: translate(2%);
+        position: relative;
+    }
+}
+
+@media(max-width:400px) {
+    .button {
+        left: 30%;
     }
 }
 
@@ -129,7 +259,7 @@
     padding-bottom: 10px;
     border: 1px solid black;
     border-left: none;
-    border-right: none;
+    /* border-right: none; */
     text-align: start;
     font-family: "Sarabun", sans-serif;
 
