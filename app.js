@@ -7,7 +7,7 @@ const formMain = document.getElementById("formMain");
 const information = document.getElementById("information");
 
 //Disable the form when the informtaion is not given
-formMain.style.display = "none"
+information.style.display = "none"
 
 
 

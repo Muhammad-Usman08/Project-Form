@@ -4,8 +4,30 @@
     box-sizing: border-box;
 }
 
+/* ====Navbar Styling==== */
+.mynavbar{
+    box-shadow:  0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;;
+    background-color:#10266b ;
+    margin-bottom: 5em;
+}
 
-/* ====Form Styling=== */
+.heading1{
+    color: white;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media(max-width:767px){
+    .mynavbar{
+        margin-bottom: 2em;
+    }
+}
+
+
+/* ====Information Styling=== */
 .form{
     display: flex;
     justify-content: space-around ;
@@ -39,6 +61,16 @@
     padding-left: 10px;
 }
 
+.button{
+    margin-top: 50px;
+    padding: 10px 25px 10px 25px;
+    color: #fff;
+    font-family: "Sarabun", sans-serif;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
+
 .country-input{
     width: 25%;
     padding: 5px 5px 5px 5px;
@@ -60,7 +92,32 @@
     .form-input,
     .country-input {
         margin-bottom: 50px;
-        width: 80%;
+        width: 90%;
         margin-right: 0;
     }
+
+    .button{
+        margin-top:0px ;
+        margin-bottom: 50px;
+    }
+}
+
+
+/* ===Form Styling=== */
+.form-table{
+    border: 1px solid black;
+    text-align: start;
+    width: 54%;
+}
+
+@media(max-width:900px){
+    .form-table{
+        width:100%;
+    }
+}
+
+.table-data{
+    padding-left: 20px;
+    padding-top: 10px;
+    /* background-color: antiquewhite; */
 }

@@ -21,6 +21,19 @@
 </head>
 
 <body>
+    <!-- Navar -->
+    <nav class="navbar navbar-expand-lg mynavbar">
+        <div class="container">
+            <div class="navbar-item">
+                <div class="navbar-brand">
+                    <h4 class="heading1">USMAN</h4>
+                </div>
+            </div>
+            <a href="#" class="navbar-link">Go to Login</a>
+        </div>
+        </div>
+    </nav>
+    <br>
 
     <!-- Information -->
     <div class="container mt-5 information" id="information">
@@ -37,10 +50,10 @@
 
         <div class="form-section2">
             <span class="form-span">Email</span>
-            <input class="form-input" placeholder="Enter email"  type="text">
+            <input class="form-input" placeholder="Enter email" type="text">
 
             <span class="form-span">Education</span>
-            <select class="form-input" >
+            <select class="form-input">
                 <option value="">Select Option</option>
                 <option value="">Under Matric</option>
                 <option value="">Matric</option>
@@ -51,7 +64,7 @@
             </select>
 
             <span class="form-span">CNIC</span>
-            <input class="form-input" placeholder="XXXXX-XXXXXXX-X"  type="number">
+            <input class="form-input" placeholder="XXXXX-XXXXXXX-X" type="number">
         </div>
 
         <div class="form-section2   ">
@@ -84,7 +97,7 @@
         </div>
 
         <!-- generate button -->
-        <button onclick="generate()" class="mt-4">generate</button>
+        <button onclick="generate()" class="button">generate</button>
     </div>
 
 
@@ -96,14 +109,18 @@
 
     <!-- Form  -->
     <section id="formMain">
-        <h2 class="mt-5">Form</h2>
+        <h2 class="">Form</h2>
         <div class="container mt-5">
-            <div class="border">
-                <span>name</span>
-                <p id="formName"></p><br>
-                <span>fatherName</span>
-                <p id="formFatherName"></p>
-            </div>
+            <table class=" form-table">
+                <tr class="table-row">
+                    <td class="table-data">Name</td>
+                    <td id="formName" class="table-data">Muhammad Usman</td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-data">Father Name</td>
+                    <td class="table-data">sadsad</td>
+                </tr>
+            </table>
         </div>
     </section>
 
