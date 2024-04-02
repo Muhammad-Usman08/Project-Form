@@ -21,7 +21,7 @@ const formEducation = document.getElementById('formEducation');
 const formCNIC = document.getElementById('formCNIC');
 const formContact = document.getElementById('formContact');
 const formAddress = document.getElementById('formAddress');
-const formField= document.getElementById('formField');
+const formField = document.getElementById('formField');
 const formCountry = document.getElementById('formCountry');
 
 //Getting buttons,and both pages mainElement
@@ -57,21 +57,21 @@ let generate = () => {
 
 
     //Sending Information to LocalStorage
-let informationObj = {
-    name: nameInput.value,
-    fatherName:fatherName.value,
-    dateOfBirth: dateOfBirth.value,
-    email:email.value,
-    education:education.value,
-    cnic: cnic.value,
-    contact:contact.value,
-    address:address.value,
-    field:field.value,
-    country:country.value
-}
+    let informationObj = {
+        name: nameInput.value,
+        fatherName: fatherName.value,
+        dateOfBirth: dateOfBirth.value,
+        email: email.value,
+        education: education.value,
+        cnic: cnic.value,
+        contact: contact.value,
+        address: address.value,
+        field: field.value,
+        country: country.value
+    }
 
-localStorage.setItem("UserInformation", JSON.stringify(informationObj));
-    
+    localStorage.setItem("UserInformation", JSON.stringify(informationObj));
+
 
 }
 

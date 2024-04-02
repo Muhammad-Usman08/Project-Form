@@ -53,7 +53,7 @@
 
 }
 
-.login-button{
+.login-button {
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -65,18 +65,32 @@
     transform: translateX(-50%);
 }
 
-.login-button:hover{
+.login-button:hover {
     background-color: #71ff03;
     color: #8e8e8e;
+}
+
+.login-text {
+    display: flex ;
+    justify-content: center;
+    margin-top: 23em;
+    color: #fff;
+    font-family: "Sarabun", sans-serif;
+    font-size: 18px;
+}
+
+.login-link{
+    color: #71ff03;
+    font-size: 18px;
+    margin-left: 10px;
 }
 
 
 
 /* ====Navbar Styling==== */
 .mynavbar {
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12), inset 0 -1px 0 0 #dadce0;
-    ;
-    background-color: #10266b;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12), inset 0 -1px 0 0 #71ff03;
+    background-color: #111111;
     margin-bottom: 2em;
 }
 
@@ -100,7 +114,8 @@
 
 /* ====Information Styling=== */
 .information-main {
-    border: 1px solid black;
+    border: 1px solid #71ff03;
+    box-shadow: 5px 5px 20px 2px #5b870b;
     padding-top: 20px;
     padding-left: 30px;
     padding-bottom: 30px;
@@ -165,6 +180,7 @@
     margin-right: 10px;
     font-family: "Sarabun", sans-serif;
     font-weight: 500;
+    color: #8e8e8e;
 }
 
 .form-input {
@@ -172,21 +188,24 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    padding: 5px 5px 5px 5px;
+    border-bottom: none;
+    padding: 10px 5px 12px 5px;
     margin-left: 10px;
     margin-right: 50px;
-    background-color: #fff;
+    background-color: #111111;
     font-family: "Sarabun", sans-serif;
     font-weight: 490;
     padding-left: 10px;
+    color: #fff;
 }
 
 .button {
     margin-top: 50px;
     padding: 10px 25px 10px 25px;
-    color: #fff;
+    color: black;
+    font-weight: 900;
     font-family: "Sarabun", sans-serif;
-    background-color: black;
+    background-color: #8cc81c;
     border: none;
     border-radius: 5px;
     position: absolute;
@@ -196,9 +215,12 @@
 
 .country-input {
     width: 25%;
-    padding: 5px 5px 5px 5px;
+    padding: 10px 5px 12px 5px;
     font-family: "Sarabun", sans-serif;
     font-weight: 500;
+    background-color: #111111;
+    border: 0;
+    color: #fff;
 }
 
 @media(max-width:991px) {
@@ -238,7 +260,8 @@
 
 /* ===Form Styling=== */
 .form-table {
-    border: 1px solid black;
+    border: 1px solid #71ff03;
+    box-shadow: 5px 5px 20px 2px #5b870b;
     text-align: start;
     width: 40%;
     margin-top: 70px;
@@ -257,26 +280,29 @@
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 1px solid black;
+    border: 1px solid #8e8e8e;
+    color: #8e8e8e;
     border-left: none;
-    /* border-right: none; */
     text-align: start;
     font-family: "Sarabun", sans-serif;
 
 }
+
 
 .table-brand {
     text-align: center;
     font-size: 35px;
     font-family: "Sarabun", sans-serif;
     font-weight: 600;
+    color: #a5f019;
 }
 
 .form-back {
     padding: 10px 25px;
-    color: #fff;
+    color: black;
+    font-weight: 900;
     font-family: "Sarabun", sans-serif;
-    background-color: black;
+    background-color: #8cc81c;
     border: none;
     border-radius: 5px;
     text-decoration: none;
