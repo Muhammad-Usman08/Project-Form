@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign Up</title>
     <!-- ====Custom Css Link=== -->
     <link rel="stylesheet" href="style.css">
     <!-- ====Bootstrap Css Link=== -->
@@ -23,8 +23,6 @@
 
 <body style="background-color: black;">
 
-
-
     <!-- Navar -->
     <nav class="navbar navbar-expand-lg mynavbar">
         <div class="container">
@@ -42,16 +40,18 @@
     <!-- ====Login==== -->
     <div class="container">
         <div class="login-heading">
-            <p>LOGIN Page</p>
+            <p>SIGN UP Page</p>
         </div>
         <div class="login-info">
+            <span>Name</span><br>
+            <input id="Name" type="text" required><br>
             <span>Email Address</span><br>
             <input id="Email" type="email"><br>
             <span>Password</span><br>
             <input id="password" type="password">
-            <a onclick="getValue()" href="form.html" class="login-button" id="loginButton">Login</a>
+            <button onclick="getValue()" class="login-button" id="loginButton">SignUp</button>
         </div>
-        <p class="login-text" style="margin-top: 18em;">Not a user <a class="login-link" href="index.html">Sign Up</a></p>
+        <!-- <p class="login-text">already a user <a class="login-link" href="login.html">Login</a></p> -->
     </div>
 
 
